@@ -1,0 +1,746 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#app {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background: #6aa84f;
+}
+
+header .chatBtn {
+	width: 60px;
+	height: 100%;
+	float: left;
+}
+
+header .chatBtn a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/chat_icon.png) no-repeat center;
+}
+
+header .logoWrap {
+	width: calc(100% - 120px);
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+header .logoWrap a {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+header .logoWrap .logoImg {
+	width: 180px;
+	height: 100%;
+	background: url(img/nysl_logo.png) no-repeat left;
+	background-size: 48px 48px;
+	margin: 0 auto;
+	line-height: 60px;
+	color: white;
+	font-size: 40px;
+	text-indent: 30px;
+}
+
+header .backBtn {
+	width: 60px;
+	height: 100%;
+	float: right;
+}
+
+header .backBtn div {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/prev_icon.png) no-repeat center;
+
+}
+
+section {
+	width: 100%;
+	min-height: calc(100vh - 60px);
+	overflow: hidden;
+}
+
+section .fixedBar {
+	width: 100%;
+	height: 180px;
+	background: white;
+	transition: 0.5s ease;
+
+}
+
+section .fixedBar.on {
+	height: 130px;
+	background: #6aa84f;
+	position: fixed;
+	top: 0;
+}
+
+section .fixedBar.on .title {
+	height: 30px;
+	line-height: 30px;
+}
+
+section .fixedBar.on .title h2 {
+	font-size: 16px;
+	line-height: 30px;
+	text-indent: -60%;
+	color: white;
+}
+
+section .fixedBar .title {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	margin-bottom: 10px;
+	transition: 0.5s ease;
+}
+
+section .fixedBar .title h2 {
+	transition: 0.5s ease;
+	line-height: 60px;
+}
+
+section .fixedBar .filterWrap {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+}
+
+section .fixedBar .filterWrap .dropdownFilter {
+	float: left;
+	width: 50%;
+}
+
+section .fixedBar .filterWrap .dropdownFilter select {
+	display: block;
+	border-radius: 4px;
+	width: 85%;
+	height: auto;
+	margin: 0 auto;
+	background: white !important;
+}
+
+section .fixedBar .datepickerWrap {
+	width: calc(50% + 20px);
+	height: auto;
+	margin: 10px auto;
+
+}
+
+section .fixedBar .datepickerWrap .calendar {
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	height: auto;
+}
+
+div.widthCal {
+	width: 85%;
+	float: left;
+}
+
+.iWrap {
+	width: 20px;
+	float: left;
+	margin-top: 7px;
+	padding-left: 3px;
+
+}
+
+.iWrap i {
+	color: grey;
+}
+
+section .fixedBar.on .iWrap i {
+	color: white;
+}
+
+i.calendar.icon.left {
+	left: 0;
+}
+
+section .fixedBar .datepickerWrap input {
+	text-indent: 10px;
+	height: 34.4px;
+	padding-left: 20px !important;
+}
+
+.alertmsg {
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	color: red;
+	display: none;
+	position: absolute;
+	margin: 30% auto;
+}
+
+.alertmsg.hidden {
+	display: block;
+}
+
+.contentWrap {
+	transition: 0.3s;
+}
+.contentWrap.on {
+
+	margin-top:140px;
+}
+
+.content {
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	height: auto;
+	margin-top: 5px;
+	overflow: hidden;
+
+	transition: 0.3s ease;
+
+}
+
+.content.hide {
+	display: none;
+}
+
+.content.hide.hidden {
+	display: block;
+
+}
+
+.content .game {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.content .game .game_date {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-top: 5px;
+
+}
+
+.content .first_game {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.content .game_top {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.content .game_top .team {
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+}
+
+.content .game_top .team .teamTop {
+	width: 100%;
+	height: 70%;
+	background: transparent;
+}
+
+.content .game_top .team .teamTop img {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	background: transparent;
+}
+
+.content .game_top .team .teamBtm {
+	width: 100%;
+	height: 30%;
+}
+
+.content .game_top .time_loc_wrap {
+	width: 60%;
+	height: 100%;
+	float: left;
+	padding: 20px 0;
+	text-align: center;
+}
+
+
+.content .game_top .time_loc_wrap > div {
+	width: 100%;
+	height: 50%;
+	line-height: 100%;
+}
+
+.content .game_bottom {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	font-size: 1rem;
+	border-bottom: 1px solid lightgrey;
+	overflow: hidden;
+}
+
+.content .game_bottom .loc_name {
+	width: 100%;
+	height: 1.5rem;
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.content .game_bottom .address {
+	width: 100%;
+	height: 1.5rem;
+	text-align: center;
+}
+
+.content .game_bottom .map {
+	width: 100%;
+	height: 180px;
+
+}
+
+.content .game_bottom .map iframe {
+	width: 90%;
+	margin: 10px 5%;
+}
+
+.content .game_bottom .seasonWrap {
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+}
+
+.content .game_bottom .seasonWrap .season_title {
+	font-size: 1.2rem;
+}
+
+.content .game_bottom .seasonWrap .season_detail table {
+	margin: 10px auto;
+}
+
+.content .game_bottom .seasonWrap .season_detail table th {
+	padding: 0 38px;
+}
+
+
+
+#topBtn {
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	cursor: pointer;
+
+	border-radius: 4px;
+	transition: 0.5s ease;
+}
+
+#topBtn:hover {
+	opacity: 0.9;
+}
+
+/*2nd page*/
+#page2 {
+	display: none;
+	position: relative;
+}
+
+#page2 header .homeBtn {
+	width: 60px;
+	height: 100%;
+	float: left;
+}
+
+#page2 header .homeBtn a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/home_icon.png) no-repeat center;
+}
+
+#page2 header .loginBtn {
+	width: 60px;
+	float: right;
+	height: 60px;
+}
+
+#page2 section .content {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+
+#page2 section .content .chat {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+}
+#page2 section .content .chat .innerChatWrap {
+	width: 100%;
+	height: calc(100vh - 140px);
+}
+#page2 section .content .chat .innerChatWrap .textArea {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: auto;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation {
+	display: flex;
+	padding: 5px;
+	margin-bottom: 5px;
+	position: relative;
+}
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me  {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .profileWrap {
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me .profileWrap {
+	display: none;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .profileWrap .profile {
+	width: 45px;
+	position: relative;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .profileWrap .profile img {
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+}
+#page2 section .content .chat .innerChatWrap .textArea .conversation .nameMsgWrap {
+	max-width: 75%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .nameMsgWrap .name {
+	font-weight: 600;
+	color: black;
+	font-size: 13px;
+}
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me .nameMsgWrap .name {
+	text-align: right;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .nameMsgWrap .messages {
+	background: white;
+	padding: 15px 20px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px;
+	min-height: 30px;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation .nameMsgWrap .messages > div {
+	font-size: 15px;
+	overflow-wrap: break-word;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation.other .speech-bubble {
+	position: relative;
+	background: #5aa792;
+	border-radius: .4em;
+	color: white;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation.other .speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-right-color: #5aa792;
+	border-left: 0;
+	margin-top: -7px;
+	margin-left: -7px;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me .speech-bubble {
+	position: relative;
+	background: #51b64b;
+	border-radius: .4em;
+	color: white;
+}
+
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me .speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-left-color: #51b64b;
+	border-right: 0;
+	margin-top: -7px;
+	margin-right: -7px;
+}
+
+#page2  section .content .chat .innerChatWrap .textArea .conversation .timeWrap {
+width: auto;
+	height: 10px;
+	font-size: 12px;
+	vertical-align: center;
+	position: absolute;
+	bottom: 6px;
+	}
+#page2 section .content .chat .innerChatWrap .textArea .conversation.me .timeWrap {
+	right: 5px;
+}
+#page2 section .content .chat .innerChatWrap .textArea .conversation.other .timeWrap  {
+	left: 60px;
+}
+
+#page2  section .content .chat .inputs {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	height: 60px;
+	padding: 10px;
+	bottom: 20px;
+	box-sizing: border-box;
+}
+#page2  section .content .chat .inputs .input {
+	width: calc(100% - 45px);
+	height: 100%;
+	border: 1px solid #eee;
+	text-indent: 20px;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+
+#page2  section .content .chat .inputs .sendBtn {
+	background: url(img/send_icon.png) no-repeat center;
+	width: 40px;
+	height: 100%;
+	border: 1px solid #eee;
+	border-radius: 10px;
+}
+
+.button.is-hovered {
+	width: 100%;
+	line-height: 100%;
+	border: none;
+}
+
+#login {
+	background: url(img/user_icon.png) no-repeat center;
+	height: 100%;
+}
+
+#logout {
+	background: url(img/logout_icon.png) no-repeat center;
+	background-size: 32px 32px;
+	height: 100%;
+}
+
+
+.loginAlert {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	width: 80%;
+	left: 10%;
+	background-color: white;
+	padding: 5px;
+	font-weight: bold;
+}
+
+#loaderWrap {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+
+}
+
+.lds-ellipsis {
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	width: 64px;
+	height: 64px;
+}
+
+.lds-ellipsis div {
+	position: absolute;
+	top: 27px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+	left: 6px;
+	animation: lds-ellipsis1 0.6s infinite;
+	background: red;
+}
+
+.lds-ellipsis div:nth-child(2) {
+	left: 6px;
+	animation: lds-ellipsis2 0.6s infinite;
+	background: orange;
+}
+
+.lds-ellipsis div:nth-child(3) {
+	left: 26px;
+	animation: lds-ellipsis2 0.6s infinite;
+	background: yellow;
+}
+
+.lds-ellipsis div:nth-child(4) {
+	left: 45px;
+	animation: lds-ellipsis3 0.6s infinite;
+	background: green;
+}
+
+@keyframes lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(19px, 0);
+	}
+}
+
+@media screen and (orientation: landscape),
+screen and (min-width: 600px) {
+
+	section .fixedBar {
+		height: 140px;
+	}
+
+	section .fixedBar.on {
+		height: 80px;
+	}
+
+	section .fixedBar .filterWrap {
+		width: 66.666%;
+		float: left;
+		padding-left: 30px;
+	}
+
+	section .fixedBar .title {
+		margin-bottom: 0;
+	}
+
+	section .fixedBar .filterWrap .dropdownFilter {
+		width: 50%;
+	}
+
+	section .fixedBar .datepickerWrap {
+		width: 33.333%;
+		float: left;
+		margin: 0;
+	}
+
+	section .fixedBar.on .title h2 {
+		text-indent: -75%;
+	}
+
+	.content .game_bottom {
+		margin-top: 5px;
+	}
+
+	.content .game_bottom .loc_name {
+		display: none;
+	}
+
+	.content .game_bottom .address {
+		height: 1.3rem;
+	}
+
+	.content .game_bottom .map {
+		width: 50%;
+		float: left;
+	}
+
+	.content .game_bottom .seasonWrap {
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 20px;
+	}
+
+	.content .game_bottom .seasonWrap .season_title {
+		font-size: 1.2rem;
+	}
+
+	.content .game_bottom .seasonWrap .season_detail table {
+		margin: 10px auto;
+	}
+
+	.content .game_bottom .seasonWrap .season_detail table th {
+		padding: 0 38px;
+	}
+
+}
